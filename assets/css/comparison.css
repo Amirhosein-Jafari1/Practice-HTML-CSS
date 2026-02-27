@@ -1,0 +1,40 @@
+.comparisonSection{
+    padding: 2rem 10rem;
+}
+
+.addProduct select{
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+}
+
+.picture5{
+    width: 80%;
+    height: 14rem;
+    object-fit: cover;
+}
+
+/* general section style  */
+
+.generalSection p{
+    font-size: 1.5rem;
+}
+.generalSection strong{
+    font-size: 2rem;
+}
+
+/* respansive style  */
+@media (max-width: 768px) {
+    .comparisonSection{
+        flex-direction: column;
+        padding: 1rem;
+        gap: 3rem;
+    }
+    .picture5{
+        width: 95%;
+    }
+
+    .generalSection{
+        flex-direction: column;
+    }
+
+}

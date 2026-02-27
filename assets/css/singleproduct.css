@@ -1,0 +1,218 @@
+/* header style  */
+.sitePath2{
+    background-color: #F9F1E7;
+    padding: 3rem 12rem;
+}
+
+/* main style  */
+.productCustomize{
+    padding-left: 7rem;
+}
+.productPicture{
+    width: 35rem;
+    height: 36.5rem;
+}
+.picture1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.morePicture{
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.picture2, .picture3,  .picture5{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.picture4{
+    position: absolute;
+    top: -2rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.star{
+    font-size: 1.7rem;
+    color: #FFC700;
+}
+
+.sizeItem button{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+}
+.sizeItem button:focus{
+    background-color: #B88E2F;
+    color: #fff;
+}
+
+.colorItem li{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+}
+.colorItem li:focus{
+    outline-offset: 0.2rem;
+}
+.colorItem li:nth-child(1):focus{
+    outline: 0.2rem solid #816DFA;
+}
+.colorItem li:nth-child(2):focus{
+    outline: 0.2rem solid #000;
+}
+.colorItem li:nth-child(3):focus{
+    outline: 0.2rem solid #B88E2F;
+}
+
+.plus{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+.minus{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+/* description section style  */
+
+.titleMenu li:focus{
+    color: #000;
+}
+
+.mainBannerLeftBox,
+.mainBannerRightBox{
+    width: 50rem;
+    height: 25rem;
+}
+
+.mainBannerLeftBox{
+    background: url('../img/15.png') center / cover no-repeat;
+}
+
+.mainBannerRightBox{
+    background: url('../img/16.png') center / cover no-repeat;
+}
+
+/* shopping cart  style  */
+.shoppingCart{
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000083;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+}
+.shoppingCart:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.shoppingCartItem{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 60%;
+    background-color: #fff;
+}
+
+.closeBtn{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    border-radius: 100%;
+    background-color: gray;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.closeBtn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* respansive style  */
+@media (max-width: 768px) {
+    .sitePath2 {
+        padding: 3rem;
+    }
+    .productCustomize{
+        flex-direction: column;
+        padding-left: 1rem;
+    }
+    .productPictures{
+        flex-direction: column;
+    }
+    .productPictures .morePictures{
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .productPictures .productPicture{
+        width: 22rem;
+    }
+    .productPictures .morePicture{
+        width: 5rem;
+        height: 5rem;
+    }
+    .productCustom{
+        width: 100%;
+    }
+    .aboutProduct p{
+        width: 90%;
+    }
+    .operations button{
+        width: 30%;
+    }
+    .operations .inputBox{
+        width: 20%;
+    }
+
+    .descripstionSection .titleMenu{
+        gap: 0.7rem;
+    }
+    .descripstionSection .titleMenu li{
+        font-size: 1rem;
+    }
+
+    .descripstionSection p{
+        width: 85%;
+    }
+
+    .descripstionSection .banners{
+        flex-direction: column;
+    }
+
+    .mainBannerLeftBox,
+    .mainBannerRightBox{
+        width: 22rem;
+    }
+
+    .shoppingCartItem{
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 20rem;
+    }
+    .shoppingCartInfo .productInfo{
+        gap: 1rem;
+    }
+    .productInfo img{
+        width: 5rem;
+    }
+
+}
